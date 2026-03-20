@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English | Janala</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind+daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- stylesheet -->
+     <link rel="stylesheet" href="./styles.css">
+     
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis illo possimus corrupti consequatur, deserunt minima placeat delectus numquam ducimus minus reprehenderit debitis illum fugit laborum, quasi velit doloremque inventore nemo.</p>
-    <button>idiot Shokal</button>
+    <nav>
+        <div class="navbar bg-base-100 shadow-sm py-4 px-20 bg-[#e9f4ff]">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    
+                <a class="flex items-center gap-2"><img src="./assets/fa-circle-question.png" alt="">FAQ</a>
+                <a class="flex items-center gap-2"><img src="./assets/fa-book-open.png" alt="">Learn</a>
+                <a class="flex items-center gap-2"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a>
+            
+                </ul>
+                </div>
+                <div class="flex justify-center items-center gap-1
+                
+                ">
+                    <h2 class="text-xl font-semibold">English</h2>
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="font-bangla text-xl">জানালা</h2>
+                </div>
+            </div>
+
+            <div class="navbar-end hidden md:flex items-center gap-3">
+                <a class="btn btn-outline btn-primary"><img src="./assets/fa-circle-question.png" alt="">FAQ</a>
+                <a class="btn btn-outline btn-primary"><img src="./assets/fa-book-open.png" alt="">Learn</a>
+                <a class="btn btn-outline btn-primary"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</a>
+            </div>
+        </div>
+    </nav>
+        
 </body>
 </html>
