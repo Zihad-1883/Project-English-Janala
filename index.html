@@ -88,6 +88,25 @@
             </div>
       </section>
 
+      <!-- loading spinner -->
+      <section id="loadingSection" class="flex justify-center my-15 hidden">
+            <span class="loading loading-bars loading-xs"></span>
+            <span class="loading loading-bars loading-sm"></span>
+            <span class="loading loading-bars loading-md"></span>
+      </section>
+
+
+      <!-- search section -->
+      <div class="join my-15 flex justify-center">
+  <div>
+    <label class="input validator join-item">
+      <input id="search-input"   type="text" placeholder="Search Word" required />
+    </label>
+  </div>
+  <button id="search-btn" class="btn btn-primary join-item">Search</button>
+        </div>
+
+
       <!-- words section -->
        <section id="words-container" class="bg-[#ebebeb] container mx-auto p-10 my-10 grid grid-cols-3 gap-8">
             
@@ -97,6 +116,22 @@
         </div>
 
        </section>
+
+       <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+           <div id="word-details">
+                
+           </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
 
       <script src="./script/script.js"></script>
 </body>
