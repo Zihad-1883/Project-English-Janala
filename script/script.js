@@ -49,7 +49,7 @@ const displayWords = (words) => {
     const wordsContainer = document.getElementById('words-container');
     wordsContainer.innerHTML = ``;
 
-    console.log(words)
+    // console.log(words)
     if(words.length === 0){
         wordsContainer.innerHTML = `
             <div class="space-y-3 flex flex-col items-center p-5 col-span-full">
@@ -73,7 +73,7 @@ const displayWords = (words) => {
                 </div>
                 <div class="flex justify-between items-center">
                     <img onclick="loadWordDetails(${word.id})" src="./assets/Vector.png" alt=""> 
-                    <img src="./assets/fi-sr-volume.png" alt="">
+                    <img onclick="pronounceWord('${word.word}')" src="./assets/fi-sr-volume.png" alt="">
                 </div>
             </div>
         `
@@ -152,3 +152,10 @@ document.getElementById('search-btn').addEventListener('click' , () => {
             displayWords(filterWords)
         })
 })
+
+
+function pronounceWord(word) {
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = "en-EN"; // English
+  window.speechSynthesis.speak(utterance);
+}
